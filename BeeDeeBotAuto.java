@@ -43,7 +43,7 @@ import com.qualcomm.robotcore.util.Range;
  * This OpMode illustrates the concept of driving a path based on time.
  * The code is structured as a LinearOpMode
  *
- * The code assumes that you do NOT have encoders on the wheels,
+ * The c677ode assumes that you do NOT have encoders on the wheels,
  *   otherwise you would use: RobotAutoDriveByEncoder;
  *
  *   The desired path in this example is:
@@ -93,14 +93,20 @@ public class BeeDeeBotAuto extends LinearOpMode {
 
         // Wait for the game to start (driver presses START)
         
-        handWave.setPosition(0.1);
+        handWave.setPosition(0.13);
         waitForStart();
 
         // Step through each leg of the path, ensuring that the OpMode has not been stopped along the way.
 
-        driveForward(1000);
-        turnLeft(3415);
-        driveBackward(1000);
+        driveForward(600);
+        turnRight(920);
+        driveBackward(1367);
+        driveForward(5000);
+
+        
+        
+        
+        
         
     }
     
@@ -137,4 +143,3 @@ public class BeeDeeBotAuto extends LinearOpMode {
     }
     
 }
-
